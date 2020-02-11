@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoopScoop", "PoopScoop\PoopScoop.csproj", "{75AC281E-9E2B-4D69-BB97-EE8AF5C12684}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75AC281E-9E2B-4D69-BB97-EE8AF5C12684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75AC281E-9E2B-4D69-BB97-EE8AF5C12684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75AC281E-9E2B-4D69-BB97-EE8AF5C12684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75AC281E-9E2B-4D69-BB97-EE8AF5C12684}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A448240E-847D-4153-8B6A-8D4340AC2075}
+	EndGlobalSection
+EndGlobal
