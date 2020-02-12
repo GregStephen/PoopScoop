@@ -103,7 +103,7 @@ IF NOT EXISTS (SELECT * FROM sys.tables WHERE [name] = 'States')
 		CREATE TABLE [States] 
 		(
 			[Id] UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
-			[StateAbbreviation] VARCHAR(2),
+			[StateAbbreviation] VARCHAR(2) not null,
 			[StateName] VARCHAR(20) not null
 		)
 	END
@@ -116,7 +116,7 @@ IF NOT EXISTS (SELECT * FROM sys.tables WHERE [name] = 'Cities')
 		CREATE TABLE [Cities] 
 		(
 			[Id] UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
-			[StateAbbreviation] VARCHAR(2) not null,
+			[StateId] UNIQUEIDENTIFIER not null,
 			[CityName] VARCHAR(50) not null
 		)
 	END
@@ -189,8 +189,8 @@ IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE [name] = 'FK_Cities_States')
 	BEGIN
 		ALTER TABLE Cities
 		ADD constraint FK_Cities_States
-			foreign key (StateAbbreviation)
-			references [States] (StateAbbreviation)
+			foreign key (StateId)
+			references States (Id)
 	END
 ELSE
 	PRINT 'FK_Cities_States already exists'
